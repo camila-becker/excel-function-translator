@@ -13,7 +13,6 @@ const excelFunctions = [
     }
 ]
 
-
 let portuguese = document.getElementById("portuguese");
 let english = document.getElementById("english");
 
@@ -32,7 +31,7 @@ btnPortuguese.addEventListener("click", (event) => {
     const isFunction = excelFunctions.find(excelFunction => excelFunction.name === portuguese.value.toLowerCase());
 
     if(isFunction){
-        return resultEnglish.innerHTML = isFunction.english;
+        return resultEnglish.innerHTML = `${isFunction.english}()`;
     }else{
         return resultEnglish.innerHTML = "Função inválida!";
     }
@@ -44,7 +43,7 @@ btnEnglish.addEventListener("click", (event) => {
     const isFunction = excelFunctions.find(excelFunction => excelFunction.english === english.value.toLowerCase());
 
     if(isFunction){
-        return resultPortuguese.innerHTML = isFunction.name;
+        return resultPortuguese.innerHTML = `${isFunction.name}()`;
     }else{
         return resultPortuguese.innerHTML = "Invalid function!";
     }
