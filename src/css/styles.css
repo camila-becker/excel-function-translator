@@ -66,3 +66,47 @@ fieldset p{
   font-weight: bold;
   font-size: 1.5em;
 }
+
+@media(max-width: 500px){
+  .container{
+    width: 100%;
+  }
+
+  .logo{
+    margin: 50px 0;
+  }
+
+  .logo img{
+    width: 80%;
+  }
+
+  form{
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  fieldset{
+    margin-top: 30px;
+  }
+
+  form input {
+    width: 80%;
+    margin-top:10px;
+  }
+
+  form button{
+    width: 84%;
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 0.4em;
+  }
+
+  form input{
+    padding: 0.3em;
+  }
+
+  form p{
+    margin-top: 40px;
+  }
+}
